@@ -1,6 +1,5 @@
 SELECT
-ID as Number,
-FIO,
-age(StartWorkDate)
+ID as Number
 FROM Personal
-LIMIT 3
+WHERE 
+DriverLicense

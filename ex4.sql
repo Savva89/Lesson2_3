@@ -1,6 +1,7 @@
 SELECT
-ID as Number,
-FIO,
-age(StartWorkDate)
-FROM Personal
-LIMIT 3
+Personal.ID as Number
+FROM Personal JOIN Grade ON Personal.ID = Grade.Personal_id
+WHERE 
+Grade.Grade = 'D' OR Grade.Grade = 'E'
+GROUP BY
+Personal.ID

@@ -1,6 +1,6 @@
 SELECT
-ID as Number,
-FIO,
-age(StartWorkDate)
+PersonalLevel,
+ROUND(AVG(Salary),2)
 FROM Personal
-LIMIT 3
+GROUP BY
+PersonalLevel

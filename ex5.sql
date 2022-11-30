@@ -1,6 +1,3 @@
 SELECT
-ID as Number,
-FIO,
-age(StartWorkDate)
+MAX(Personal.Salary)
 FROM Personal
-LIMIT 3
